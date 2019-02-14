@@ -19,8 +19,8 @@
 
 /* ------------------------------------------------- */
 // The minsLeft determines the minutes left, while the seconds left determines the seconds left
-var minsLeft = 0;
-var secsLeft = 2;
+var minsLeft = 30;
+var secsLeft = 0;
 // The time left is equal to the minutes left (in seconds) plus the seconds left
 var timeLeft = minsLeft * 60 + secsLeft;
 // The countdown is saved in a avriable so it can be stopped later on
