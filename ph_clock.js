@@ -19,8 +19,8 @@
 
 /* ------------------------------------------------- */
 // The minsLeft determines the minutes left, while the seconds left determines the seconds left
-var minsLeft = 30;
-var secsLeft = 0;
+var minsLeft = 0;
+var secsLeft = 2;
 // The time left is equal to the minutes left (in seconds) plus the seconds left
 var timeLeft = minsLeft * 60 + secsLeft;
 // The countdown is saved in a avriable so it can be stopped later on
@@ -47,7 +47,7 @@ function countdown() {
 
 // The stopClock function will stop the timer from counting down if it reaches zero. When it does reach zero, it displays a message saying that the order has expired.
 function stopClock() {
-    document.getElementById("TimeHead").insertAdjacentHTML("beforebegin", "<br > (Order Expired)");
+    document.getElementById("TimeHead").insertAdjacentHTML("beforeend", "<br > (Order Expired)");
     clearInterval(clockID);
 }
 /* The checkTimer() function tests whether there is any time left to make the
